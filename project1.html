@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"> 
+
+    <title>Document</title>
+
+    <style>
+        #img{
+            margin-left: 5%;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top" id="color">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand fw-bold fst-italic text-white" href="#">Tomato</a> -->
+            <img src="./javaimage/istore.png" alt=""  id="img">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" aria-current="page" href="#">Invester Relations</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <!--  -->
+                         <button type="button" class="btn btn-primary position-relative btn-badge">
+                            <i class="bi bi-cart4"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" >
+                              <input type="text" id="notification" value="0" class="bg-danger inputbadge" style="width: 18px; height: 15px; border: none;">
+                              <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+    
+            <div class="row  justify-content-center g-2">
+                <div class="col col-lg-4 ">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./javaimage/i13pm.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div><h5 class="card-title">iPhone 13 Max Pro </h5></div>
+                            </div>
+                            
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <div class= "d-flex justify-content-between w-100" >
+                                <div class="fs-5">MRP</div>
+                                <div class="fs-5 fw-bold">₹129900</div>
+                            </div>
+                            <div class= "d-flex justify-content-between w-100" >
+                                <div class="fs-6">Effective price <br>(After Cashback)</div>
+                                <div class="fs-5 fw-bold">₹126900</div>
+                            </div>
+                            <div class="d-flex justify-content-center m-3" >
+                                <button onclick="addition('textbox')"><i class="bi bi-plus-square"></i></button>
+                                <input type="text" id="textbox" value="0" style="width: 25px;">
+                                <button onclick="subtraction('textbox')""><i class="bi bi-dash-square"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3"><a href="#" class="btn btn-primary" id="buymow">Buy Now </a></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./javaimage/ip13p.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 13 Pro</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <div class= "d-flex justify-content-between w-100" >
+                                <div class="fs-5">MRP</div>
+                                <div class="fs-5 fw-bold">₹129900</div>
+                            </div>
+                            <div class= "d-flex justify-content-between w-100" >
+                                <div class="fs-6">Effective price <br>(After Cashback)</div>
+                                <div class="fs-5 fw-bold">₹126900</div>
+                            </div>
+                            <div class="d-flex justify-content-center m-3" >
+                                <button onclick="addition('textbox2')"><i class="bi bi-plus-square"></i></button>
+                                <input type="text" id="textbox2" value="0" style="width: 25px;">
+                                <button onclick="subtraction('textbox2')""><i class="bi bi-dash-square"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3"><a href="#" class="btn btn-primary" id="buymow">Buy Now </a></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./javaimage/ip13.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 13</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <div class= "d-flex justify-content-between w-100" >
+                                <div class="fs-5">MRP</div>
+                                <div class="fs-5 fw-bold">₹129900</div>
+                            </div>
+                            <div class= "d-flex justify-content-between w-100" >
+                                <div class="fs-6">Effective price <br>(After Cashback)</div>
+                                <div class="fs-5 fw-bold">₹126900</div>
+                            </div>
+                            <div class="d-flex justify-content-center m-3" >
+                                <button onclick="addition('textbox3')"><i class="bi bi-plus-square"></i></button>
+                                <input type="text" id="textbox3" value="0" style="width: 25px;">
+                                <button onclick="subtraction('textbox3')"><i class="bi bi-dash-square"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3"><a href="#" class="btn btn-primary" id="buymow">Buy Now </a></div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="row  justify-content-center mt-5 g-2">
+                <div class="col col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./javaimage/ip13mini.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <h5 class="card-title">iPhone 13 Mini</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <div class= "d-flex justify-content-between w-100" >
+                                <div class="fs-5">MRP</div>
+                                <div class="fs-5 fw-bold">₹129900</div>
+                            </div>
+                            <div class= "d-flex justify-content-between w-100" >
+                                <div class="fs-6">Effective price <br>(After Cashback)</div>
+                                <div class="fs-5 fw-bold">₹126900</div>
+                            </div>
+                            <div class="d-flex justify-content-center m-3" >
+                                <button onclick="addition('textbox4')"><i class="bi bi-plus-square"></i></button>
+                                <input type="text" id="textbox4" value="0" style="width: 25px;">
+                                <button onclick="subtraction('textbox4')"><i class="bi bi-dash-square"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3"><a href="#" class="btn btn-primary" id="buymow">Buy Now </a></div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./javaimage/ip12.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <h5 class="card-title">iPhone 12</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <div class= "d-flex justify-content-between w-100" >
+                                <div class="fs-5">MRP</div>
+                                <div class="fs-5 fw-bold">₹129900</div>
+                            </div>
+                            <div class= "d-flex justify-content-between w-100" >
+                                <div class="fs-6">Effective price <br>(After Cashback)</div>
+                                <div class="fs-5 fw-bold">₹126900</div>
+                            </div>
+                            <div class="d-flex justify-content-center m-3" >
+                                <button  onclick="addition('textbox5')"><i class="bi bi-plus-square"></i></button>
+                                <input type="text" id="textbox5" value="0" style="width: 25px;">
+                                <button onclick="subtraction('textbox5')"><i class="bi bi-dash-square"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3"><a href="#" class="btn btn-primary" id="buymow" >Buy Now </a></div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-lg-4 ">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./javaimage/ip12mini.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <h5 class="card-title">iPhone 12 Mini</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <div class= "d-flex justify-content-between w-100" >
+                                <div class="fs-5">MRP</div>
+                                <div class="fs-5 fw-bold">₹129900</div>
+                            </div>
+                            <div class= "d-flex justify-content-between w-100" >
+                                <div class="fs-6">Effective price <br>(After Cashback)</div>
+                                <div class="fs-5 fw-bold">₹126900</div>
+                            </div>
+                            <div class="d-flex justify-content-center m-3" >
+                                <button onclick="addition('textbox6')"><i class="bi bi-plus-square"></i></button>
+                                <input type="text" id="textbox6" value="0" style="width: 25px;">
+                                <button onclick="subtraction('textbox6')"><i class="bi bi-dash-square"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3"><a href="#" class="btn btn-primary" id="buymow" >Buy Now </a></div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="row  justify-content-center mt-5 g-2">
+                <div class="col col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                         <img src="./javaimage/i13pm.png" class="card-img-top" alt="...">
+                         <div class="card-body">
+
+                                <h5 class="card-title">iPhone 13 Max Pro</h5>
+                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                <div class= "d-flex justify-content-between w-100" >
+                                    <div class="fs-5">MRP</div>
+                                    <div class="fs-5 fw-bold">₹129900</div>
+                                </div>
+                                <div class= "d-flex justify-content-between w-100" >
+                                    <div class="fs-6">Effective price <br>(After Cashback)</div>
+                                    <div class="fs-5 fw-bold">₹126900</div>
+                                </div>
+                                <div class="d-flex justify-content-center m-3" >
+                                    <button onclick="addition('textbox7')"><i class="bi bi-plus-square"></i></button>
+                                    <input type="text" id="textbox7" value="0" style="width: 25px;">
+                                    <button onclick="subtraction('textbox7')"><i class="bi bi-dash-square"></i></button>
+                                </div>
+                                <div class="d-flex justify-content-center mt-3"><a href="#" class="btn btn-primary" id="buymow" >Buy Now </a></div>
+
+
+                            </div>
+                    </div>
+                </div>
+
+
+                <div class="col col-lg-4 ">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./javaimage/ip13p.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <h5 class="card-title">iPhone 13 Pro</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <div class= "d-flex justify-content-between w-100" >
+                                <div class="fs-5">MRP</div>
+                                <div class="fs-5 fw-bold">₹129900</div>
+                            </div>
+                            <div class= "d-flex justify-content-between w-100" >
+                                <div class="fs-6">Effective price <br>(After Cashback)</div>
+                                <div class="fs-5 fw-bold">₹126900</div>
+                            </div>
+                            <div class="d-flex justify-content-center m-3" >
+                                <button onclick="addition('textbox8')"><i class="bi bi-plus-square"></i></button>
+                                <input type="text" id="textbox8" value="0" style="width: 25px;">
+                                <button onclick="subtraction('textbox8')"><i class="bi bi-dash-square"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3"><a href="#" class="btn btn-primary" id="buymow" >Buy Now </a></div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-lg-4 ">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./javaimage/ip13.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <h5 class="card-title">iPhone 13</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <div class= "d-flex justify-content-between w-100" >
+                                <div class="fs-5">MRP</div>
+                                <div class="fs-5 fw-bold">₹129900</div>
+                            </div>
+                            <div class= "d-flex justify-content-between w-100" >
+                                <div class="fs-6">Effective price <br>(After Cashback)</div>
+                                <div class="fs-5 fw-bold">₹126900</div>
+                            </div>
+                            <div class="d-flex justify-content-center m-3" >
+                                <button onclick="addition('textbox9')"><i class="bi bi-plus-square"></i></button>
+                                <input type="text" id="textbox9" value="0" style="width: 25px;">
+                                <button onclick="subtraction('textbox9')"><i class="bi bi-dash-square"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3"><a href="#" class="btn btn-primary" id="buymow">Buy Now </a></div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            
+        
+        </div>
+    </div>
+
+
+    <script src="./project1.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+console.log('this is local storage')
+
+localStorage.setItem('name','Aniket')
+localStorage.setItem('name2','Akash')
